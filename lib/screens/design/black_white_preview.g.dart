@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:calaurd/screens/design/onboarding_screen.g.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:calaurd/controller/tag/back_button_custom.dart';
+import 'package:calaurd/controller/tag/button_custom.dart';
 
 class BlackWhitePreview extends StatefulWidget {
   const BlackWhitePreview({Key? key}) : super(key: key);
@@ -16,17 +19,25 @@ class _BlackWhitePreview extends State<BlackWhitePreview> {
       color: Colors.black,
       child: Stack(children: [
         Positioned(
-          left: 20.5,
-          width: 36.776,
-          top: 29.739,
-          height: 36.776,
-          child: Image.asset(
-            'assets/images/409_368.png',
-            package: 'calaurd',
-            width: 36.776,
-            height: 36.776,
-            fit: BoxFit.none,
-          ),
+          left: 170.0,
+          width: 73.0,
+          top: 35.627,
+          height: 25.0,
+          child: Container(
+              width: 73.000,
+              height: 25.000,
+              child: AutoSizeText(
+                'Preview',
+                style: TextStyle(
+                  fontFamily: 'Aeonik',
+                  fontSize: 21,
+                  fontWeight: FontWeight.w400,
+                  fontStyle: FontStyle.normal,
+                  letterSpacing: 0,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              )),
         ),
         Positioned(
           left: 20.0,
@@ -39,19 +50,6 @@ class _BlackWhitePreview extends State<BlackWhitePreview> {
             width: 374.000,
             height: 579.660,
             fit: BoxFit.none,
-          ),
-        ),
-        Positioned(
-          left: 20.5,
-          width: 374.0,
-          top: 744.208,
-          height: 50.0,
-          child: Container(
-            width: 374.000,
-            height: 50.000,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(0)),
-            ),
           ),
         ),
         Positioned(
@@ -76,46 +74,30 @@ class _BlackWhitePreview extends State<BlackWhitePreview> {
               )),
         ),
         Positioned(
-          left: 170.0,
-          width: 73.0,
-          top: 35.627,
-          height: 25.0,
-          child: Container(
-              width: 73.000,
-              height: 25.000,
-              child: AutoSizeText(
-                'Preview',
-                style: TextStyle(
-                  fontFamily: 'Aeonik',
-                  fontSize: 21,
-                  fontWeight: FontWeight.w400,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 0,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.center,
-              )),
+          left: 20.0,
+          width: 36.776,
+          top: 29.739,
+          height: 36.776,
+          child: BackButtonCustom(
+            child: LayoutBuilder(builder: (context, constraints) {
+              return Container(/** This Symbol was not found **/);
+            }),
+          ),
         ),
         Positioned(
-          left: 133.5,
-          width: 131.0,
-          top: 759.708,
-          height: 19.0,
-          child: Container(
-              width: 131.000,
-              height: 19.000,
-              child: AutoSizeText(
-                'CALAURIZE!',
-                style: TextStyle(
-                  fontFamily: 'Aeonik',
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 4.48,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.left,
-              )),
+          left: 20.0,
+          width: 374.0,
+          top: 791.513,
+          height: 50.0,
+          child: ButtonCustom(
+            child: LayoutBuilder(builder: (context, constraints) {
+              return Button(
+                constraints,
+                ovrGETSTARTED: 'COLOURIZE',
+              );
+            }),
+            ovrGETSTARTED: 'COLOURIZE',
+          ),
         ),
       ]),
     );

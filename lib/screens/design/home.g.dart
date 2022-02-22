@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:calaurd/controller/tag/images_custom.dart';
+import 'package:calaurd/controller/tag/add_image_menu_custom.dart';
+import 'package:calaurd/controller/tag/home_custom.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -54,30 +57,18 @@ class _Home extends State<Home> {
           ),
         ),
         Positioned(
-          left: MediaQuery.of(context).size.width * 0.121,
-          width: MediaQuery.of(context).size.width * 0.055,
-          top: MediaQuery.of(context).size.height * 0.951,
-          height: MediaQuery.of(context).size.height * 0.028,
-          child: Image.asset(
-            'assets/images/409_188.png',
-            package: 'calaurd',
-            width: MediaQuery.of(context).size.width * 0.055,
-            height: MediaQuery.of(context).size.height * 0.028,
-            fit: BoxFit.fill,
-          ),
-        ),
-        Positioned(
           left: 333.006,
           width: 25.0,
           top: 852.526,
           height: 25.0,
-          child: Image.asset(
+          child: ImagesCustom(
+              child: Image.asset(
             'assets/images/409_190.png',
             package: 'calaurd',
             width: 25.000,
             height: 25.000,
             fit: BoxFit.none,
-          ),
+          )),
         ),
         Positioned(
           left: 0,
@@ -171,13 +162,49 @@ class _Home extends State<Home> {
           width: 73.599,
           top: 791.533,
           height: 73.599,
-          child: Image.asset(
+          child: AddImageMenuCustom(
+              child: Image.asset(
             'assets/images/409_184.png',
             package: 'calaurd',
             width: 73.599,
             height: 73.599,
             fit: BoxFit.none,
-          ),
+          )),
+        ),
+        Positioned(
+          left: 50.275,
+          width: 22.73,
+          top: 852.526,
+          height: 25.0,
+          child: HomeCustom(
+              child: Stack(children: [
+            Positioned(
+              left: 0,
+              width: 22.73,
+              top: 0,
+              height: 25.0,
+              child: Image.asset(
+                'assets/images/409_188.png',
+                package: 'calaurd',
+                width: 22.730,
+                height: 25.000,
+                fit: BoxFit.none,
+              ),
+            ),
+            Positioned(
+              left: 0,
+              width: 22.73,
+              top: 0,
+              height: 25.0,
+              child: Image.asset(
+                'assets/images/409_188.png',
+                package: 'calaurd',
+                width: 22.730,
+                height: 25.000,
+                fit: BoxFit.none,
+              ),
+            ),
+          ])),
         ),
       ]),
     );

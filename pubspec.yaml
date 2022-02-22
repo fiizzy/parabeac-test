@@ -17,7 +17,6 @@ flutter:
   uses-material-design: true
   assets: 
     - packages/calaurd/assets/images/409_106.png
-    - packages/calaurd/assets/images/409_108.png
     - packages/calaurd/assets/images/409_162.png
     - packages/calaurd/assets/images/409_165.png
     - packages/calaurd/assets/images/409_168.png
@@ -28,16 +27,12 @@ flutter:
     - packages/calaurd/assets/images/409_184.png
     - packages/calaurd/assets/images/409_188.png
     - packages/calaurd/assets/images/409_190.png
-    - packages/calaurd/assets/images/409_349.png
-    - packages/calaurd/assets/images/409_351.png
-    - packages/calaurd/assets/images/409_357.png
-    - packages/calaurd/assets/images/409_361.png
-    - packages/calaurd/assets/images/409_368.png
     - packages/calaurd/assets/images/409_373.png
-    - packages/calaurd/assets/images/409_381.png
+    - packages/calaurd/assets/images/I510_12;409_352.png
+    - packages/calaurd/assets/images/I510_12;409_353.png
     - packages/calaurd/assets/images/409_385.png
+    - packages/calaurd/assets/images/I510_15;409_352.png
+    - packages/calaurd/assets/images/I510_15;409_353.png
     - packages/calaurd/assets/images/409_395.png
     - packages/calaurd/assets/images/409_400.png
     - packages/calaurd/assets/images/409_408.png
-    - packages/calaurd/assets/images/409_93.png
-    - packages/calaurd/assets/images/409_97.png
