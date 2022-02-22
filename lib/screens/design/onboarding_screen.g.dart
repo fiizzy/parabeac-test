@@ -29,20 +29,6 @@ class _OnboardingScreen extends State<OnboardingScreen> {
           ),
         ),
         Positioned(
-          left: 20.0,
-          width: 374.0,
-          top: 791.513,
-          height: 50.0,
-          child: Container(
-            width: 374.000,
-            height: 50.000,
-            decoration: const BoxDecoration(
-              color: Colors.red,
-              borderRadius: BorderRadius.all(Radius.circular(0)),
-            ),
-          ),
-        ),
-        Positioned(
           left: 0,
           width: 414.0,
           top: 0,
@@ -54,40 +40,6 @@ class _OnboardingScreen extends State<OnboardingScreen> {
               color: Colors.black,
               borderRadius: BorderRadius.all(Radius.circular(0)),
             ),
-          ),
-        ),
-        Positioned(
-          left: 133.0,
-          width: 148.0,
-          top: 807.013,
-          height: 19.0,
-          child: Container(
-              width: 148.000,
-              height: 19.000,
-              child: AutoSizeText(
-                'GET STARTED',
-                style: TextStyle(
-                  fontFamily: 'Aeonik',
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 4.48,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.left,
-              )),
-        ),
-        Positioned(
-          left: 380.264,
-          width: 14.252,
-          top: 85.271,
-          height: 112.425,
-          child: Image.asset(
-            'assets/images/409_108.png',
-            package: 'calaurd',
-            width: 14.252,
-            height: 112.425,
-            fit: BoxFit.none,
           ),
         ),
         Positioned(
