@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:calaurd/widgets/responsive_orientation_builder.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:calaurd/controller/tag/button_custom.dart';
+import 'package:calaurd/widgets/design/button.g.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -62,6 +65,21 @@ class _OnboardingScreen extends State<OnboardingScreen> {
                 ),
                 textAlign: TextAlign.left,
               )),
+        ),
+        Positioned(
+          left: 20.0,
+          width: 374.0,
+          top: 793.0,
+          height: 50.0,
+          child: ButtonCustom(
+            child: LayoutBuilder(builder: (context, constraints) {
+              return Button(
+                constraints,
+                ovrGETSTARTED: 'GET STARTED',
+              );
+            }),
+            ovrGETSTARTED: 'GET STARTED',
+          ),
         ),
       ]),
     );

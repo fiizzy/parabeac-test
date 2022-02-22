@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:calaurd/screens/design/onboarding_screen.g.dart';
+import 'package:calaurd/widgets/responsive_orientation_builder.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:calaurd/controller/tag/start_new_custom.dart';
 import 'package:calaurd/controller/tag/text_button_custom.dart';
 import 'package:calaurd/controller/tag/back_button_custom.dart';
 import 'package:calaurd/controller/tag/button_custom.dart';
+import 'package:calaurd/widgets/design/back_button.g.dart';
+import 'package:calaurd/widgets/design/button.g.dart';
 
 class ColouredPreview extends StatefulWidget {
   const ColouredPreview({Key? key}) : super(key: key);
@@ -159,8 +161,36 @@ class _ColouredPreview extends State<ColouredPreview> {
           height: 36.776,
           child: BackButtonCustom(
             child: LayoutBuilder(builder: (context, constraints) {
-              return Container(/** This Symbol was not found **/);
+              return BackButton(
+                constraints,
+                ovrEllipse3: Image.asset(
+                  'assets/images/I510_15;409_352.png',
+                  package: 'calaurd',
+                  width: MediaQuery.of(context).size.width * 0.089,
+                  height: MediaQuery.of(context).size.height * 0.041,
+                  fit: BoxFit.fill,
+                ),
+                ovrArrow1: Image.asset(
+                  'assets/images/I510_15;409_353.png',
+                  package: 'calaurd',
+                  width: MediaQuery.of(context).size.width * 0.051,
+                  fit: BoxFit.fill,
+                ),
+              );
             }),
+            ovrEllipse3: Image.asset(
+              'assets/images/I510_15;409_352.png',
+              package: 'calaurd',
+              width: MediaQuery.of(context).size.width * 0.089,
+              height: MediaQuery.of(context).size.height * 0.041,
+              fit: BoxFit.fill,
+            ),
+            ovrArrow1: Image.asset(
+              'assets/images/I510_15;409_353.png',
+              package: 'calaurd',
+              width: MediaQuery.of(context).size.width * 0.051,
+              fit: BoxFit.fill,
+            ),
           ),
         ),
         Positioned(
