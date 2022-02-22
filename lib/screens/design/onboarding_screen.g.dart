@@ -36,7 +36,8 @@ class _OnboardingScreen extends State<OnboardingScreen> {
           child: Container(
             width: 374.000,
             height: 50.000,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
+              color: Colors.red,
               borderRadius: BorderRadius.all(Radius.circular(0)),
             ),
           ),
