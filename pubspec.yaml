@@ -16,19 +16,8 @@ dev_dependencies:
 flutter: 
   uses-material-design: true
   assets: 
-    - packages/calaurd/assets/images/409_106.png
-    - packages/calaurd/assets/images/409_162.png
-    - packages/calaurd/assets/images/409_165.png
-    - packages/calaurd/assets/images/409_168.png
-    - packages/calaurd/assets/images/409_173.png
-    - packages/calaurd/assets/images/409_174.png
-    - packages/calaurd/assets/images/409_175.png
-    - packages/calaurd/assets/images/409_176.png
-    - packages/calaurd/assets/images/409_184.png
-    - packages/calaurd/assets/images/409_188.png
-    - packages/calaurd/assets/images/409_190.png
-    - packages/calaurd/assets/images/409_385.png
-    - packages/calaurd/assets/images/I510_15;409_352.png
-    - packages/calaurd/assets/images/I510_15;409_353.png
-    - packages/calaurd/assets/images/409_93.png
-    - packages/calaurd/assets/images/409_97.png
+    - packages/calaurd/assets/images/409_395.png
+    - packages/calaurd/assets/images/409_400.png
+    - packages/calaurd/assets/images/409_408.png
+    - packages/calaurd/assets/images/409_352.png
+    - packages/calaurd/assets/images/409_353.png
