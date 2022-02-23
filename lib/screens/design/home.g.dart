@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:calaurd/controller/tag/first_image_test_custom.dart';
 import 'package:calaurd/controller/tag/images_custom.dart';
+import 'package:calaurd/controller/tag/second_image_test_custom.dart';
 import 'package:calaurd/controller/tag/add_image_menu_custom.dart';
 import 'package:calaurd/controller/tag/home_custom.dart';
 
@@ -31,30 +33,39 @@ class _Home extends State<Home> {
           ),
         ),
         Positioned(
-          left: 372.616,
-          width: 322.153,
-          top: 133.138,
-          height: 635.989,
-          child: Image.asset(
-            'assets/images/409_165.png',
-            package: 'calaurd',
-            width: 322.153,
-            height: 635.989,
-            fit: BoxFit.none,
-          ),
-        ),
-        Positioned(
           left: 20.0,
           width: 322.727,
           top: 161.303,
           height: 579.66,
-          child: Image.asset(
-            'assets/images/409_162.png',
-            package: 'calaurd',
-            width: 322.727,
-            height: 579.660,
-            fit: BoxFit.none,
-          ),
+          child: FirstImageTestCustom(
+              child: Stack(children: [
+            Positioned(
+              left: 0,
+              width: 322.727,
+              top: 0,
+              height: 579.66,
+              child: Image.asset(
+                'assets/images/409_162.png',
+                package: 'calaurd',
+                width: 322.727,
+                height: 579.660,
+                fit: BoxFit.none,
+              ),
+            ),
+            Positioned(
+              left: 0,
+              width: 322.727,
+              top: 0,
+              height: 579.66,
+              child: Image.asset(
+                'assets/images/409_162.png',
+                package: 'calaurd',
+                width: 322.727,
+                height: 579.660,
+                fit: BoxFit.none,
+              ),
+            ),
+          ])),
         ),
         Positioned(
           left: 333.006,
@@ -69,6 +80,28 @@ class _Home extends State<Home> {
             height: 25.000,
             fit: BoxFit.none,
           )),
+        ),
+        Positioned(
+          left: 372.615,
+          width: 322.153,
+          top: 133.138,
+          height: 635.989,
+          child: SecondImageTestCustom(
+              child: Stack(children: [
+            Positioned(
+              left: 0,
+              width: 322.153,
+              top: 0,
+              height: 635.989,
+              child: Image.asset(
+                'assets/images/409_165.png',
+                package: 'calaurd',
+                width: 322.153,
+                height: 635.989,
+                fit: BoxFit.none,
+              ),
+            ),
+          ])),
         ),
         Positioned(
           left: 0,
@@ -105,55 +138,71 @@ class _Home extends State<Home> {
             ),
             Positioned(
               left: 0.003,
-              width: 45.154,
+              width: 171.02,
               top: 0,
               height: 40.028,
-              child: Image.asset(
-                'assets/images/409_173.png',
-                package: 'calaurd',
-                width: 45.154,
-                height: 40.028,
-                fit: BoxFit.none,
-              ),
-            ),
-            Positioned(
-              left: 12.613,
-              width: 23.72,
-              top: 10.968,
-              height: 23.218,
-              child: Image.asset(
-                'assets/images/409_174.png',
-                package: 'calaurd',
-                width: 23.720,
-                height: 23.218,
-                fit: BoxFit.none,
-              ),
-            ),
-            Positioned(
-              left: 9.081,
-              width: 23.72,
-              top: 6.084,
-              height: 23.218,
-              child: Image.asset(
-                'assets/images/409_175.png',
-                package: 'calaurd',
-                width: 23.720,
-                height: 23.218,
-                fit: BoxFit.none,
-              ),
-            ),
-            Positioned(
-              left: 61.817,
-              width: 109.206,
-              top: 7.974,
-              height: 22.557,
-              child: Image.asset(
-                'assets/images/409_176.png',
-                package: 'calaurd',
-                width: 109.206,
-                height: 22.557,
-                fit: BoxFit.none,
-              ),
+              child: Stack(children: [
+                Positioned(
+                  left: 0,
+                  width: 171.02,
+                  top: 0,
+                  height: 40.028,
+                  child: Stack(children: [
+                    Positioned(
+                      left: 0,
+                      width: 45.154,
+                      top: 0,
+                      height: 40.028,
+                      child: Image.asset(
+                        'assets/images/409_173.png',
+                        package: 'calaurd',
+                        width: 45.154,
+                        height: 40.028,
+                        fit: BoxFit.none,
+                      ),
+                    ),
+                    Positioned(
+                      left: 12.61,
+                      width: 23.72,
+                      top: 10.968,
+                      height: 23.218,
+                      child: Image.asset(
+                        'assets/images/409_174.png',
+                        package: 'calaurd',
+                        width: 23.720,
+                        height: 23.218,
+                        fit: BoxFit.none,
+                      ),
+                    ),
+                    Positioned(
+                      left: 9.078,
+                      width: 23.72,
+                      top: 6.084,
+                      height: 23.218,
+                      child: Image.asset(
+                        'assets/images/409_175.png',
+                        package: 'calaurd',
+                        width: 23.720,
+                        height: 23.218,
+                        fit: BoxFit.none,
+                      ),
+                    ),
+                    Positioned(
+                      left: 61.814,
+                      width: 109.206,
+                      top: 7.974,
+                      height: 22.557,
+                      child: Image.asset(
+                        'assets/images/409_176.png',
+                        package: 'calaurd',
+                        width: 109.206,
+                        height: 22.557,
+                        fit: BoxFit.none,
+                      ),
+                    ),
+                  ]),
+                ),
+              ]),
             ),
           ]),
         ),
@@ -178,19 +227,6 @@ class _Home extends State<Home> {
           height: 25.0,
           child: HomeCustom(
               child: Stack(children: [
-            Positioned(
-              left: 0,
-              width: 22.73,
-              top: 0,
-              height: 25.0,
-              child: Image.asset(
-                'assets/images/409_188.png',
-                package: 'calaurd',
-                width: 22.730,
-                height: 25.000,
-                fit: BoxFit.none,
-              ),
-            ),
             Positioned(
               left: 0,
               width: 22.73,

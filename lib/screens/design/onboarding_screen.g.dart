@@ -1,10 +1,6 @@
-import 'package:calaurd/screens/design/home.g.dart';
 import 'package:flutter/material.dart';
-import 'package:calaurd/widgets/responsive_orientation_builder.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:calaurd/controller/tag/calaurd_button_custom.dart';
-import 'package:calaurd/widgets/design/calaurd_button.g.dart';
-import 'package:get/get.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -74,16 +70,9 @@ class _OnboardingScreen extends State<OnboardingScreen> {
           top: 793.0,
           height: 50.0,
           child: CalaurdButtonCustom(
-            onTap: () {
-              // Get.to(() => const Home());
-            },
             child: LayoutBuilder(builder: (context, constraints) {
-              return CalaurdButton(
-                constraints,
-                ovrGETSTARTED: 'GET STARTED',
-              );
+              return Container(/** This Symbol was not found **/);
             }),
-            ovrGETSTARTED: 'GET STARTED',
           ),
         ),
       ]),

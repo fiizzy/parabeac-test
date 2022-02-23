@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:calaurd/widgets/responsive_orientation_builder.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:calaurd/controller/tag/start_new_custom.dart';
 import 'package:calaurd/controller/tag/text_button_custom.dart';
 import 'package:calaurd/controller/tag/calaurd_back_button_custom.dart';
 import 'package:calaurd/controller/tag/calaurd_button_custom.dart';
 import 'package:calaurd/widgets/design/calaurd_back_button.g.dart';
-import 'package:calaurd/widgets/design/calaurd_button.g.dart';
 
 class ColouredPreview extends StatefulWidget {
   const ColouredPreview({Key? key}) : super(key: key);
@@ -200,12 +198,8 @@ class _ColouredPreview extends State<ColouredPreview> {
           height: 50.0,
           child: CalaurdButtonCustom(
             child: LayoutBuilder(builder: (context, constraints) {
-              return CalaurdButton(
-                constraints,
-                ovrGETSTARTED: 'SAVE',
-              );
+              return Container(/** This Symbol was not found **/);
             }),
-            ovrGETSTARTED: 'SAVE',
           ),
         ),
       ]),
