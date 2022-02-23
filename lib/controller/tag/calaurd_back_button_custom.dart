@@ -1,4 +1,6 @@
+import 'package:calaurd/screens/design/home.g.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CalaurdBackButtonCustom extends StatefulWidget {
   final Widget? child;
@@ -19,6 +21,10 @@ class CalaurdBackButtonCustom extends StatefulWidget {
 class _CalaurdBackButtonCustomState extends State<CalaurdBackButtonCustom> {
   @override
   Widget build(BuildContext context) {
-    return widget.child!;
+    return InkWell(
+        child: widget.child!,
+        onTap: () {
+          Get.offAll(const Home());
+        });
   }
 }

@@ -1,4 +1,7 @@
+import 'package:calaurd/controller/tag/upload_image_custom.dart';
+import 'package:calaurd/screens/design/upload_screen.g.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AddImageMenuCustom extends StatefulWidget {
   final Widget? child;
@@ -15,6 +18,11 @@ class AddImageMenuCustom extends StatefulWidget {
 class _AddImageMenuCustomState extends State<AddImageMenuCustom> {
   @override
   Widget build(BuildContext context) {
-    return widget.child!;
+    return InkWell(
+      child: widget.child,
+      onTap: () {
+        Get.to(() => const UploadScreen());
+      },
+    );
   }
 }

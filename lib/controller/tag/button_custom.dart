@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ButtonCustom extends StatefulWidget {
   final Widget? child;
@@ -16,6 +17,11 @@ class ButtonCustom extends StatefulWidget {
 class _ButtonCustomState extends State<ButtonCustom> {
   @override
   Widget build(BuildContext context) {
-    return widget.child!;
+    return InkWell(
+      child: widget.child,
+      onTap: () {
+        Get.off;
+      },
+    );
   }
 }
