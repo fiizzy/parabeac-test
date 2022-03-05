@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({
+    Key? key,
+  }) : super(key: key);
   @override
   _SplashScreen createState() => _SplashScreen();
 }
@@ -15,30 +17,46 @@ class _SplashScreen extends State<SplashScreen> {
       color: Color(0xff050505),
       child: Stack(children: [
         Positioned(
-          left: MediaQuery.of(context).size.width * 0.378,
-          width: MediaQuery.of(context).size.width * 0.245,
-          top: MediaQuery.of(context).size.height * 0.422,
-          height: MediaQuery.of(context).size.height * 0.101,
-          child: Image.asset(
-            'assets/images/409_93.png',
-            package: 'calaurd',
-            width: MediaQuery.of(context).size.width * 0.245,
-            height: MediaQuery.of(context).size.height * 0.101,
-            fit: BoxFit.fill,
-          ),
-        ),
-        Positioned(
-          left: MediaQuery.of(context).size.width * 0.354,
-          width: MediaQuery.of(context).size.width * 0.292,
-          top: MediaQuery.of(context).size.height * 0.55,
-          height: MediaQuery.of(context).size.height * 0.028,
-          child: Image.asset(
-            'assets/images/409_97.png',
-            package: 'calaurd',
-            width: MediaQuery.of(context).size.width * 0.292,
-            height: MediaQuery.of(context).size.height * 0.028,
-            fit: BoxFit.fill,
-          ),
+          left: 146.577,
+          width: 120.848,
+          top: 378.352,
+          height: 139.297,
+          child: Stack(children: [
+            Positioned(
+              left: 9.806,
+              width: 101.235,
+              top: 0,
+              height: 90.271,
+              child: Stack(children: [
+                Positioned(
+                  left: 0,
+                  width: 101.235,
+                  top: 0,
+                  height: 90.271,
+                  child: Image.asset(
+                    'assets/images/409_93.png',
+                    package: 'calaurd',
+                    width: 101.235,
+                    height: 90.271,
+                    fit: BoxFit.none,
+                  ),
+                ),
+              ]),
+            ),
+            Positioned(
+              left: 0,
+              width: 120.848,
+              top: 114.188,
+              height: 25.109,
+              child: Image.asset(
+                'assets/images/409_97.png',
+                package: 'calaurd',
+                width: 120.848,
+                height: 25.109,
+                fit: BoxFit.none,
+              ),
+            ),
+          ]),
         ),
       ]),
     );

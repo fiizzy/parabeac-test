@@ -5,7 +5,9 @@ import 'package:calaurd/controller/tag/calaurd_back_button_custom.dart';
 import 'package:calaurd/widgets/design/calaurd_back_button.g.dart';
 
 class UploadScreen extends StatefulWidget {
-  const UploadScreen({Key? key}) : super(key: key);
+  const UploadScreen({
+    Key? key,
+  }) : super(key: key);
   @override
   _UploadScreen createState() => _UploadScreen();
 }
@@ -36,44 +38,39 @@ class _UploadScreen extends State<UploadScreen> {
           width: 374.0,
           top: 493.832,
           height: 284.582,
-          child: Container(
-            width: 374.000,
-            height: 284.582,
-            decoration: BoxDecoration(
-              color: Color(0xff0f0f0f),
-              borderRadius: BorderRadius.all(Radius.circular(0)),
-              border: Border.all(
-                color: Color(0xff818181),
-                width: 2.0,
+          child: Stack(children: [
+            Positioned(
+              left: 0,
+              width: 374.0,
+              top: 0,
+              height: 284.582,
+              child: Container(
+                width: 374.000,
+                height: 284.582,
+                decoration: BoxDecoration(
+                  color: Color(0xff0f0f0f),
+                  borderRadius: BorderRadius.all(Radius.circular(0)),
+                  border: Border.all(
+                    color: Color(0xff818181),
+                    width: 2.0,
+                  ),
+                ),
               ),
             ),
-          ),
-        ),
-        Positioned(
-          left: 176.94,
-          width: 61.049,
-          top: 563.14,
-          height: 60.952,
-          child: Image.asset(
-            'assets/images/409_361.png',
-            package: 'calaurd',
-            width: 61.049,
-            height: 60.952,
-            fit: BoxFit.none,
-          ),
-        ),
-        Positioned(
-          left: 33.172,
-          width: 348.656,
-          top: 699.332,
-          height: 1.0,
-          child: Container(
-            width: 348.656,
-            height: 1.000,
-            decoration: BoxDecoration(
-              color: Colors.black,
+            Positioned(
+              left: 156.44,
+              width: 61.049,
+              top: 69.308,
+              height: 60.952,
+              child: Image.asset(
+                'assets/images/409_361.png',
+                package: 'calaurd',
+                width: 61.049,
+                height: 60.952,
+                fit: BoxFit.none,
+              ),
             ),
-          ),
+          ]),
         ),
         Positioned(
           left: 20.5,
@@ -101,28 +98,78 @@ class _UploadScreen extends State<UploadScreen> {
               ),
             ),
             Positioned(
-              left: 150.35,
-              width: 73.301,
+              left: 91.5,
+              width: 191.0,
               top: 78.636,
-              height: 73.301,
-              child: Image.asset(
-                'assets/images/409_357.png',
-                package: 'calaurd',
-                width: 73.301,
-                height: 73.301,
-                fit: BoxFit.none,
+              height: 127.311,
+              child: Stack(children: [
+                Positioned(
+                  left: 58.85,
+                  width: 73.301,
+                  top: 0,
+                  height: 73.301,
+                  child: Image.asset(
+                    'assets/images/409_357.png',
+                    package: 'calaurd',
+                    width: 73.301,
+                    height: 73.301,
+                    fit: BoxFit.none,
+                  ),
+                ),
+                Positioned(
+                  left: 0,
+                  width: 191.0,
+                  top: 108.311,
+                  height: 19.0,
+                  child: Container(
+                      width: 191.000,
+                      height: 19.000,
+                      child: AutoSizeText(
+                        'Upload Image from Gallery',
+                        style: TextStyle(
+                          fontFamily: 'Aeonik',
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          fontStyle: FontStyle.normal,
+                          letterSpacing: 0,
+                          color: Colors.white,
+                        ),
+                        textAlign: TextAlign.center,
+                      )),
+                ),
+              ]),
+            ),
+          ])),
+        ),
+        Positioned(
+          left: 33.172,
+          width: 348.656,
+          top: 670.617,
+          height: 29.715,
+          child: Stack(children: [
+            Positioned(
+              left: 0,
+              width: 348.656,
+              top: 28.715,
+              height: 1.0,
+              child: Container(
+                width: 348.656,
+                height: 1.000,
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                ),
               ),
             ),
             Positioned(
-              left: 91.5,
-              width: 191.0,
-              top: 186.947,
+              left: 0,
+              width: 118.0,
+              top: 0,
               height: 19.0,
               child: Container(
-                  width: 191.000,
+                  width: 118.000,
                   height: 19.000,
                   child: AutoSizeText(
-                    'Upload Image from Gallery',
+                    'Enter image URL',
                     style: TextStyle(
                       fontFamily: 'Aeonik',
                       fontSize: 16,
@@ -131,31 +178,10 @@ class _UploadScreen extends State<UploadScreen> {
                       letterSpacing: 0,
                       color: Colors.white,
                     ),
-                    textAlign: TextAlign.center,
+                    textAlign: TextAlign.left,
                   )),
             ),
-          ])),
-        ),
-        Positioned(
-          left: 33.172,
-          width: 118.0,
-          top: 670.617,
-          height: 19.0,
-          child: Container(
-              width: 118.000,
-              height: 19.000,
-              child: AutoSizeText(
-                'Enter image URL',
-                style: TextStyle(
-                  fontFamily: 'Aeonik',
-                  fontSize: 16,
-                  fontWeight: FontWeight.w400,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 0,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.left,
-              )),
+          ]),
         ),
         Positioned(
           left: 185.5,
@@ -219,6 +245,7 @@ class _UploadScreen extends State<UploadScreen> {
                   'assets/images/I516_24;409_353.png',
                   package: 'calaurd',
                   width: MediaQuery.of(context).size.width * 0.051,
+                  height: MediaQuery.of(context).size.height * 0.002,
                   fit: BoxFit.fill,
                 ),
               );
@@ -234,6 +261,7 @@ class _UploadScreen extends State<UploadScreen> {
               'assets/images/I516_24;409_353.png',
               package: 'calaurd',
               width: MediaQuery.of(context).size.width * 0.051,
+              height: MediaQuery.of(context).size.height * 0.002,
               fit: BoxFit.fill,
             ),
           ),
