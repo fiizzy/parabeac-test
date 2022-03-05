@@ -7,7 +7,9 @@ import 'package:calaurd/widgets/design/calaurd_back_button.g.dart';
 import 'package:calaurd/widgets/design/calaurd_button.g.dart';
 
 class BlackWhitePreview extends StatefulWidget {
-  const BlackWhitePreview({Key? key}) : super(key: key);
+  const BlackWhitePreview({
+    Key? key,
+  }) : super(key: key);
   @override
   _BlackWhitePreview createState() => _BlackWhitePreview();
 }
@@ -46,34 +48,50 @@ class _BlackWhitePreview extends State<BlackWhitePreview> {
           width: 374.0,
           top: 115.531,
           height: 579.66,
-          child: Image.asset(
-            'assets/images/409_373.png',
-            package: 'calaurd',
-            width: 374.000,
-            height: 579.660,
-            fit: BoxFit.none,
-          ),
+          child: Stack(children: [
+            Positioned(
+              left: 0,
+              width: 374.0,
+              top: 0,
+              height: 579.66,
+              child: Image.asset(
+                'assets/images/409_373.png',
+                package: 'calaurd',
+                width: 374.000,
+                height: 579.660,
+                fit: BoxFit.none,
+              ),
+            ),
+          ]),
         ),
         Positioned(
           left: 167.021,
           width: 78.957,
           top: 825.256,
           height: 17.0,
-          child: Container(
+          child: Stack(children: [
+            Positioned(
+              left: 0,
               width: 78.957,
-              height: 17.000,
-              child: AutoSizeText(
-                'Replace',
-                style: TextStyle(
-                  fontFamily: 'Aeonik',
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                  fontStyle: FontStyle.normal,
-                  letterSpacing: 3.9200000000000004,
-                  color: Colors.white,
-                ),
-                textAlign: TextAlign.left,
-              )),
+              top: 0,
+              height: 17.0,
+              child: Container(
+                  width: 78.957,
+                  height: 17.000,
+                  child: AutoSizeText(
+                    'Replace',
+                    style: TextStyle(
+                      fontFamily: 'Aeonik',
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                      fontStyle: FontStyle.normal,
+                      letterSpacing: 3.9200000000000004,
+                      color: Colors.white,
+                    ),
+                    textAlign: TextAlign.left,
+                  )),
+            ),
+          ]),
         ),
         Positioned(
           left: 20.0,
@@ -95,6 +113,7 @@ class _BlackWhitePreview extends State<BlackWhitePreview> {
                   'assets/images/I510_12;409_353.png',
                   package: 'calaurd',
                   width: MediaQuery.of(context).size.width * 0.051,
+                  height: MediaQuery.of(context).size.height * 0.002,
                   fit: BoxFit.fill,
                 ),
               );
@@ -110,6 +129,7 @@ class _BlackWhitePreview extends State<BlackWhitePreview> {
               'assets/images/I510_12;409_353.png',
               package: 'calaurd',
               width: MediaQuery.of(context).size.width * 0.051,
+              height: MediaQuery.of(context).size.height * 0.002,
               fit: BoxFit.fill,
             ),
           ),

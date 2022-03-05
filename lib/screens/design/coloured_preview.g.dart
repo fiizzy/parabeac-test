@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:calaurd/widgets/responsive_orientation_builder.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:calaurd/controller/tag/start_new_custom.dart';
 import 'package:calaurd/controller/tag/text_button_custom.dart';
 import 'package:calaurd/controller/tag/calaurd_back_button_custom.dart';
 import 'package:calaurd/controller/tag/calaurd_button_custom.dart';
 import 'package:calaurd/widgets/design/calaurd_back_button.g.dart';
+import 'package:calaurd/widgets/design/calaurd_button.g.dart';
 
 class ColouredPreview extends StatefulWidget {
-  const ColouredPreview({Key? key}) : super(key: key);
+  const ColouredPreview({
+    Key? key,
+  }) : super(key: key);
   @override
   _ColouredPreview createState() => _ColouredPreview();
 }
@@ -129,27 +133,6 @@ class _ColouredPreview extends State<ColouredPreview> {
                     textAlign: TextAlign.left,
                   )),
             ),
-            Positioned(
-              left: 0,
-              width: 52.0,
-              top: 0,
-              height: 17.0,
-              child: Container(
-                  width: 52.000,
-                  height: 17.000,
-                  child: AutoSizeText(
-                    'HOME',
-                    style: TextStyle(
-                      fontFamily: 'Aeonik',
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      fontStyle: FontStyle.normal,
-                      letterSpacing: 3.9200000000000004,
-                      color: Colors.white,
-                    ),
-                    textAlign: TextAlign.left,
-                  )),
-            ),
           ])),
         ),
         Positioned(
@@ -172,6 +155,7 @@ class _ColouredPreview extends State<ColouredPreview> {
                   'assets/images/I510_15;409_353.png',
                   package: 'calaurd',
                   width: MediaQuery.of(context).size.width * 0.051,
+                  height: MediaQuery.of(context).size.height * 0.002,
                   fit: BoxFit.fill,
                 ),
               );
@@ -187,6 +171,7 @@ class _ColouredPreview extends State<ColouredPreview> {
               'assets/images/I510_15;409_353.png',
               package: 'calaurd',
               width: MediaQuery.of(context).size.width * 0.051,
+              height: MediaQuery.of(context).size.height * 0.002,
               fit: BoxFit.fill,
             ),
           ),
@@ -198,8 +183,12 @@ class _ColouredPreview extends State<ColouredPreview> {
           height: 50.0,
           child: CalaurdButtonCustom(
             child: LayoutBuilder(builder: (context, constraints) {
-              return Container(/** This Symbol was not found **/);
+              return CalaurdButton(
+                constraints,
+                ovrGETSTARTED: 'SAVE',
+              );
             }),
+            ovrGETSTARTED: 'SAVE',
           ),
         ),
       ]),
