@@ -5,7 +5,9 @@ import 'package:calaurd/controller/tag/calaurd_button_custom.dart';
 import 'package:calaurd/widgets/design/calaurd_button.g.dart';
 
 class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({Key? key}) : super(key: key);
+  const OnboardingScreen({
+    Key? key,
+  }) : super(key: key);
   @override
   _OnboardingScreen createState() => _OnboardingScreen();
 }

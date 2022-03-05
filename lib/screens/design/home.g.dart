@@ -6,7 +6,9 @@ import 'package:calaurd/controller/tag/add_image_menu_custom.dart';
 import 'package:calaurd/controller/tag/home_custom.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({
+    Key? key,
+  }) : super(key: key);
   @override
   _Home createState() => _Home();
 }
@@ -39,19 +41,6 @@ class _Home extends State<Home> {
           height: 579.66,
           child: FirstImageTestCustom(
               child: Stack(children: [
-            Positioned(
-              left: 0,
-              width: 322.727,
-              top: 0,
-              height: 579.66,
-              child: Image.asset(
-                'assets/images/409_162.png',
-                package: 'calaurd',
-                width: 322.727,
-                height: 579.660,
-                fit: BoxFit.none,
-              ),
-            ),
             Positioned(
               left: 0,
               width: 322.727,
