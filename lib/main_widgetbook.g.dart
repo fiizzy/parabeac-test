@@ -1,8 +1,13 @@
+// *********************************************************************************
+// PARABEAC-GENERATED CODE. DO NOT MODIFY.
+// 
+// FOR MORE INFORMATION ON HOW TO USE PARABEAC, PLEASE VISIT docs.parabeac.com
+// *********************************************************************************
+    
+
     import 'package:widgetbook/widgetbook.dart';
     import 'package:flutter/material.dart';
     import 'package:calaurd/widgets/design/calaurd_back_button.g.dart';
-import 'package:calaurd/widgets/responsive_orientation_builder.dart';
-
 import 'package:calaurd/widgets/design/calaurd_button.g.dart';
 
 
@@ -36,7 +41,7 @@ import 'package:calaurd/widgets/design/calaurd_button.g.dart';
       WidgetbookUseCase(
         name: 'CalaurdBackButton',
         builder: (context) => Center(child:       SizedBox(
-        width: 36.776,height: 36.776,
+        height: 36.7760009765625,width: 36.77593994140625,
         child: LayoutBuilder( 
   builder: (context, constraints) {
     return CalaurdBackButton(
@@ -59,7 +64,7 @@ constraints,
       WidgetbookUseCase(
         name: 'CalaurdButton',
         builder: (context) => Center(child:       SizedBox(
-        width: 374.000,height: 50.000,
+        height: 50.0,width: 374.0,
         child: LayoutBuilder( 
   builder: (context, constraints) {
     return CalaurdButton(
@@ -78,7 +83,7 @@ constraints,
     
 ],
 
-      )
+      ),
     
 ],
 
